@@ -1,0 +1,23 @@
+.page-wrapper {
+  padding-top: 64px;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+}
+
+.trending-header {
+  margin: 2rem 0;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.trends-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
