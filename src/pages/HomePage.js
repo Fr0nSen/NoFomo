@@ -58,7 +58,14 @@ function HomePage() {
               <div className="social-links">
                 <a href="#" className="social-link">Twitter</a>
                 <a href="#" className="social-link">Discord</a>
-                <a href="#" className="social-link">Instagram</a>
+                <a 
+                  href="https://www.instagram.com/nofomo.india?igsh=c285YzZwdTJsaXNh" 
+                  className="social-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Instagram
+                </a>
               </div>
             </div>
             <div className="footer-section">
