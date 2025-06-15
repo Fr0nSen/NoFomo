@@ -1,8 +1,15 @@
 import Airtable from 'airtable';
 
+if (!process.env.REACT_APP_AIRTABLE_API_KEY || !process.env.REACT_APP_AIRTABLE_BASE_ID) {
+  console.error('Missing Airtable configuration');
+}
+
 const base = new Airtable({
-  apiKey: process.env.REACT_APP_AIRTABLE_API_KEY
+  apiKey: process.env.REACT_APP_AIRTABLE_API_KEY,
+  endpointUrl: 'https://api.airtable.com'
 }).base(process.env.REACT_APP_AIRTABLE_BASE_ID);
+
+console.log('Airtable connection initialized');
 
 // Function to fetch trends
 export const getTrends = async () => {
